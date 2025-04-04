@@ -1,3 +1,4 @@
+import { Structure } from "./(components)/Structure";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 
@@ -7,10 +8,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  
   return (
     <html lang="en">
       <body className={`antialiased`}>
-        <ThemeProvider attribute="class">{children}</ThemeProvider>
+        <ThemeProvider attribute="class">
+          <Structure>{children}</Structure>
+        </ThemeProvider>
       </body>
     </html>
   );

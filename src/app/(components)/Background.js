@@ -8,7 +8,7 @@ const Background = () => {
 
   return (
     <div
-      className={`-z-10 fixed top-0 left-0 w-full h-full transition-colors duration-300 sm:overflow-auto overflow-hidden`}
+      className={`-z-10 fixed top-0 left-0 w-full h-full transition-colors duration-300 overflow-hidden`}
     >
       <div
         className={`absolute inset-0 w-full h-full ${
