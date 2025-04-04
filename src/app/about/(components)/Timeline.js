@@ -7,6 +7,8 @@ export default function MyJourneyTimeline({ myJourney }) {
   // Ref for the whole timeline container
   const timelineRef = useRef(null);
   const isTimelineInView = useInView(timelineRef, { once: true });
+  const blockRef = useRef(null);
+  const isBlockInView = useInView(blockRef, { once: true });
 
   const controls = useAnimation();
 
@@ -40,8 +42,6 @@ export default function MyJourneyTimeline({ myJourney }) {
         />
 
         {myJourney.map((item) => {
-          const blockRef = useRef(null);
-          const isBlockInView = useInView(blockRef, { once: true });
 
           return (
             <div
